@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | The Royal Stay</title>
+  <meta name="description" content="Contact The Royal Stay. Sample address, phone, email, reception hours and an enquiry form (front-end demonstration).">
+  <meta name="theme-color" content="#F4F1E8">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder" class="site-header-wrap"></div>
+  <main id="main-content">
+    <section class="page-hero contact-hero">
+      <img class="page-hero-img" src="assets/images/hotel-gallery-1.jpg" alt="Elegant luxury hotel interiors">
+      <div class="page-hero-overlay"></div>
+      <div class="container-x page-hero-content">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Enquiry</span></nav>
+        <p class="eyebrow">PERSONAL HOSPITALITY • TIMELESS LUXURY</p>
+        <h1 class="t-xl">Let’s Plan Something Special</h1>
+        <p class="lead">Explore The Royal Stay. Have a question? We’d love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- SECTION 1: address + enquiry form, side by side, fits one screen -->
+    <section class="contact-view contact-view-details" aria-labelledby="contact-title">
+      <div class="container-x contact-layout">
+        <div class="contact-info reveal">
+          <p class="eyebrow">GET IN TOUCH</p>
+          <h2 id="contact-title" class="t-lg">A royal welcome<br>starts with a hello.</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="contact-intro">The Royal Stay is a hospitality showcase. Send an enquiry for information about our rooms, dining and experiences — no online booking or payment is offered.</p>
+          <div class="contact-cards">
+            <a class="contact-detail" href="https://www.google.com/maps/search/?api=1&query=Lonavala%2C+Pune%2C+Maharashtra" target="_blank" rel="noopener"><span class="icon-chip"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><span><strong>Visit Us</strong><small>Pune – Lonavala, Maharashtra, India</small></span></a>
+            <a class="contact-detail" href="tel:8830532500"><span class="icon-chip"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><strong>Call Us</strong><small>88305 32500</small></span></a>
+            <div class="contact-detail"><span class="icon-chip"><i class="fa-regular fa-clock" aria-hidden="true"></i></span><span><strong>Reception</strong><small>Open 24 hours (sample)</small></span></div>
+            <a class="contact-detail" href="mailto:shelarjayshree635@gmail.com"><span class="icon-chip"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span><span><strong>Email Us</strong><small>shelarjayshree635@gmail.com</small></span></a>
+          </div>
+        </div>
+
+        <div class="contact-form-panel reveal">
+          <div class="form-heading"><span class="eyebrow">WE’RE LISTENING</span><h2 class="t-md">Send an Enquiry</h2><p>Fill in your details and your email app will open with the enquiry ready to send.</p></div>
+          <form id="contact-form" class="contact-form-grid" novalidate>
+            <div><label class="field-label" for="ct-name">Full name</label><input class="field" id="ct-name" name="name" type="text" autocomplete="name" required placeholder="Your name"></div>
+            <div><label class="field-label" for="ct-email">Email address</label><input class="field" id="ct-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+            <div><label class="field-label" for="ct-phone">Phone number</label><input class="field" id="ct-phone" name="phone" type="tel" autocomplete="tel" placeholder="Optional"></div>
+            <div><label class="field-label" for="ct-subject">Enquiry about</label><select class="field" id="ct-subject" name="subject"><option>General enquiry</option><option>Rooms &amp; suites</option><option>Dining</option><option>Amenities &amp; experiences</option><option>Events &amp; celebrations</option></select></div>
+            <div class="form-message"><label class="field-label" for="ct-message">Your message</label><textarea class="field" id="ct-message" name="message" rows="3" required placeholder="Tell us how we can help..."></textarea></div>
+            <div class="contact-send-actions"><button type="submit" class="btn btn-gold"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i> Send Enquiry by Email</button><button type="button" id="send-enquiry-whatsapp" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Send via WhatsApp</button></div>
+            <p class="form-note">This is an enquiry form only. No booking is made on this website.</p>
+            <p id="contact-status" class="form-status" role="status" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: map on the right, content on the left, fits one screen -->
+    <section class="contact-view contact-view-map" aria-labelledby="map-title">
+      <div class="container-x contact-layout">
+        <div class="map-info reveal">
+          <p class="eyebrow">FIND US</p>
+          <h2 id="map-title" class="t-lg">Your way to<br>The Royal Stay.</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="contact-intro">Nestled between Pune and the hills of Lonavala, we are an easy, scenic drive from both cities. Our team is happy to help you plan the journey.</p>
+          <ul class="route-list">
+            <li><span class="icon-chip"><i class="fa-solid fa-train" aria-hidden="true"></i></span><span><strong>By rail</strong><small>Lonavala station on the Mumbai–Pune line</small></span></li>
+            <li><span class="icon-chip"><i class="fa-solid fa-road" aria-hidden="true"></i></span><span><strong>By road</strong><small>Via the Mumbai–Pune Expressway</small></span></li>
+            <li><span class="icon-chip"><i class="fa-solid fa-plane" aria-hidden="true"></i></span><span><strong>By air</strong><small>Pune Airport, transfers on request</small></span></li>
+          </ul>
+          <div class="map-actions">
+            <a class="btn btn-gold btn-sm" href="https://www.google.com/maps/search/?api=1&query=Lonavala%2C+Pune%2C+Maharashtra" target="_blank" rel="noopener"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i> Get Directions</a>
+            <a class="btn btn-outline btn-sm" href="tel:8830532500"><i class="fa-solid fa-phone" aria-hidden="true"></i> Call Reception</a>
+          </div>
+        </div>
+
+        <div class="contact-map-card reveal" data-map-shield>
+          <iframe title="Map showing Lonavala, Pune, Maharashtra" src="https://maps.google.com/maps?q=Lonavala%2C%20Pune%2C%20Maharashtra&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <span class="map-hint"><i class="fa-solid fa-hand-pointer" aria-hidden="true"></i> Click the map to explore</span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/booking.js" defer></script>
+  <script src="js/enquiry-whatsapp.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var roomNames = { deluxe: 'Deluxe Room', executive: 'Executive Suite', royal: 'Royal Suite', family: 'Family Suite' };
+      var params = new URLSearchParams(window.location.search);
+      var room = roomNames[params.get('room')];
+      var subject = document.getElementById('ct-subject');
+      var message = document.getElementById('ct-message');
+      if (room && subject && message) {
+        subject.value = 'Rooms & suites';
+        message.value = 'I would like to enquire about the ' + room + '. Please share more information.';
+        document.getElementById('ct-name').focus({preventScroll:true});
+      }
+    });
+  </script>
+</body>
+</html>

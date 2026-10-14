@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rooms & Suites | The Royal Stay</title>
+  <meta name="description" content="Browse sample rooms and suites at The Royal Stay: Deluxe Room, Executive Suite, Royal Suite and Family Suite. Prices are illustrative.">
+  <meta name="theme-color" content="#F4F1E8">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder" class="site-header-wrap"></div>
+  <main id="main-content">
+    <section class="page-hero">
+      <img class="page-hero-img" src="assets/images/deluxe-room.jpg" alt="Deluxe Room with a king bed and warm lighting at The Royal Stay">
+      <div class="page-hero-overlay"></div>
+      <div class="container-x page-hero-content">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Rooms & Suites</span></nav>
+        <h1 class="t-xl">Rooms &amp; Suites</h1>
+        <p class="lead">Calm, beautifully appointed spaces for every kind of stay. Rates shown are illustrative sample prices.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="rooms-intro">
+      <div class="container-x">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-6 reveal">
+          <div class="section-head section-head-flush">
+            <h2 id="rooms-intro" class="t-lg">Find Your Perfect Room</h2>
+            <span class="rule" aria-hidden="true"></span>
+            <p class="lead">Every room includes complimentary Wi-Fi, fine linens and daily housekeeping. Filter by category to compare.</p>
+          </div>
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Filter rooms by category">
+            <button type="button" class="filter-btn" data-room-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-room-filter="rooms" aria-pressed="false">Rooms</button>
+            <button type="button" class="filter-btn" data-room-filter="suites" aria-pressed="false">Suites</button>
+          </div>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="card reveal flex flex-col" data-room-category="rooms">
+            <a class="img-wrap ar-43 room-view-trigger" href="#room-preview" data-room-preview="deluxe" aria-label="View details for Deluxe Room">
+              <img src="assets/images/deluxe-room.jpg" alt="Deluxe Room with a king bed, warm neutral tones and soft lighting" loading="lazy">
+              <span class="price-tag">$240 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Deluxe Room</h3>
+              <p class="text-sm text-muted-royal mt-1">A calm, light-filled room with a plush king bed, a quiet work corner and a marble-finished bath.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 2 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>38 m²</li>
+                <li><i class="fa-solid fa-wifi" aria-hidden="true"></i>Free Wi-Fi</li><li><i class="fa-solid fa-snowflake" aria-hidden="true"></i>Air conditioning</li><li><i class="fa-solid fa-bath" aria-hidden="true"></i>Rain shower</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <button type="button" class="btn btn-outline btn-sm room-view-trigger" data-room-preview="deluxe">View Details</button>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=deluxe#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal flex flex-col" data-room-category="suites">
+            <a class="img-wrap ar-43 room-view-trigger" href="#room-preview" data-room-preview="executive" aria-label="View details for Executive Suite">
+              <img src="assets/images/executive-suite.jpg" alt="Executive Suite living area with designer sofa and a bedroom beyond" loading="lazy">
+              <span class="price-tag">$380 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Executive Suite</h3>
+              <p class="text-sm text-muted-royal mt-1">A private lounge, a generous bedroom and a deep soaking tub for longer stays and working trips.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 3 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>62 m²</li>
+                <li><i class="fa-solid fa-couch" aria-hidden="true"></i>Separate lounge</li><li><i class="fa-solid fa-mug-hot" aria-hidden="true"></i>Coffee station</li><li><i class="fa-solid fa-bath" aria-hidden="true"></i>Soaking tub</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <button type="button" class="btn btn-outline btn-sm room-view-trigger" data-room-preview="executive">View Details</button>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=executive#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal flex flex-col" data-room-category="suites">
+            <a class="img-wrap ar-43 room-view-trigger" href="#room-preview" data-room-preview="royal" aria-label="View details for Royal Suite">
+              <img src="assets/images/royal-suite.jpg" alt="Royal Suite bedroom with a canopy-style bed, gold accents and city views" loading="lazy">
+              <span class="price-tag">$720 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Royal Suite</h3>
+              <p class="text-sm text-muted-royal mt-1">Our grandest address with panoramic views, a private dining area and a dedicated personal host.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 4 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>110 m²</li>
+                <li><i class="fa-solid fa-mountain-city" aria-hidden="true"></i>Panoramic views</li><li><i class="fa-solid fa-utensils" aria-hidden="true"></i>Private dining</li><li><i class="fa-solid fa-bell-concierge" aria-hidden="true"></i>Personal host</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <button type="button" class="btn btn-outline btn-sm room-view-trigger" data-room-preview="royal">View Details</button>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=royal#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal flex flex-col" data-room-category="suites">
+            <a class="img-wrap ar-43 room-view-trigger" href="#room-preview" data-room-preview="family" aria-label="View details for Family Suite">
+              <img src="assets/images/family-suite.jpg" alt="Family Suite with a king bed, twin beds and a bright seating area" loading="lazy">
+              <span class="price-tag">$330 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Family Suite</h3>
+              <p class="text-sm text-muted-royal mt-1">Two sleeping zones and a shared lounge, designed for families travelling together.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 5 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>70 m²</li>
+                <li><i class="fa-solid fa-bed" aria-hidden="true"></i>Two bedrooms</li><li><i class="fa-solid fa-baby" aria-hidden="true"></i>Cots on request</li><li><i class="fa-solid fa-person-swimming" aria-hidden="true"></i>Near the pool</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <button type="button" class="btn btn-outline btn-sm room-view-trigger" data-room-preview="family">View Details</button>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=family#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p id="room-empty" class="text-center text-muted-royal mt-6" hidden>No rooms match this filter.</p>
+      </div>
+    </section>
+
+    <section class="bg-gold section-tight" aria-labelledby="cta-title">
+      <div class="container-x flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left reveal">
+        <div>
+          <h2 id="cta-title" class="t-lg">Not sure which room suits you?</h2>
+          <p class="mt-1">Send a quick enquiry and our team will suggest options for your dates.</p>
+        </div>
+        <a class="btn btn-dark" href="contact.html">Send an Enquiry <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <div class="room-preview-modal" id="room-preview-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="room-preview-title">
+    <div class="room-preview-backdrop" data-preview-close></div>
+    <div class="room-preview-panel" role="document"><button type="button" class="room-preview-close" aria-label="Close room details" data-preview-close>&times;</button><img id="preview-image" src="assets/images/deluxe-room.jpg" alt="Room preview"><div class="room-preview-copy"><p class="eyebrow">THE ROYAL STAY</p><h2 id="room-preview-title" class="t-lg">Deluxe Room</h2><p id="preview-description"></p><p id="preview-meta" class="text-sm text-muted-royal"></p><a id="preview-enquiry" class="btn btn-gold mt-4" href="contact.html?room=deluxe#contact-form">Enquire About This Room</a></div></div>
+  </div>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/room-preview.js" defer></script>
+</body>
+</html>

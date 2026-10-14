@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Details | The Royal Stay</title>
+  <meta name="description" content="Room details, sample pricing, photo gallery and enquiry form at The Royal Stay.">
+  <meta name="theme-color" content="#F4F1E8">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder" class="site-header-wrap"></div>
+  <main id="main-content">
+    <section class="page-hero">
+      <img id="rd-hero-img" class="page-hero-img" src="assets/images/deluxe-room.jpg" alt="Deluxe Room at The Royal Stay">
+      <div class="page-hero-overlay"></div>
+      <div class="container-x page-hero-content">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="rooms.html">Rooms &amp; Suites</a><span aria-hidden="true">/</span><span id="rd-crumb" aria-current="page">Deluxe Room</span></nav>
+        <h1 id="rd-title" class="t-xl">Deluxe Room</h1>
+        <p id="rd-summary" class="lead">A calm, light-filled room with a plush king bed and a quiet work corner.</p>
+      </div>
+    </section>
+
+    <section id="room-detail" class="section" aria-label="Room details">
+      <div class="container-x">
+        <a class="text-link mb-4" href="rooms.html"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back to Rooms</a>
+        <div class="grid gap-8 lg:grid-cols-3 mt-4">
+          <div class="lg:col-span-2">
+            <div class="img-wrap img-zoom ar-169 reveal"><img id="rd-main-image" src="assets/images/deluxe-room.jpg" alt="Deluxe Room main photograph"></div>
+            <div id="rd-thumbs" class="grid grid-cols-4 gap-2 mt-2" aria-label="Room photo gallery"></div>
+
+            <h2 class="t-md mt-6">About this room</h2>
+            <p id="rd-desc" class="mt-2 text-muted-royal"></p>
+
+            <dl class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5">
+              <div class="stat"><dt class="text-xs text-muted-royal">Bed type</dt><dd id="rd-bed" class="font-semibold text-sm"></dd></div>
+              <div class="stat"><dt class="text-xs text-muted-royal">Capacity</dt><dd id="rd-guests" class="font-semibold text-sm"></dd></div>
+              <div class="stat"><dt class="text-xs text-muted-royal">Room size</dt><dd id="rd-size" class="font-semibold text-sm"></dd></div>
+              <div class="stat"><dt class="text-xs text-muted-royal">Check-in / out</dt><dd class="font-semibold text-sm">From 3:00 PM / by 11:00 AM</dd></div>
+            </dl>
+
+            <h2 class="t-md mt-6">Room amenities</h2>
+            <ul id="rd-amenities" class="check-list grid sm:grid-cols-2 gap-x-6 mt-2 text-sm"></ul>
+          </div>
+
+          <aside class="lg:col-span-1" aria-label="Room enquiry">
+            <div class="card enquiry-card"><div class="card-body">
+              <p class="eyebrow">MAKE AN ENQUIRY</p>
+              <p class="t-lg"><span id="rd-price">Explore this room</span></p>
+              <p class="text-sm text-muted-royal mt-2">Interested in this room? Send your enquiry through our contact page. No booking is made on this showcase website.</p>
+              <a id="rd-contact-link" class="btn btn-gold w-full mt-5" href="contact.html?room=deluxe#contact-form">Enquire About This Room <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-white-soft" aria-labelledby="related-title">
+      <div class="container-x">
+        <div class="section-head reveal"><h2 id="related-title" class="t-lg">You May Also Like</h2><span class="rule" aria-hidden="true"></span></div>
+        <div id="rd-related" class="grid gap-5 md:grid-cols-3"></div>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</body>
+</html>

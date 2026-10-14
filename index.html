@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Royal Stay | Luxury Hotel, Dining & Hospitality</title>
+  <meta name="description" content="The Royal Stay is a luxury hotel concept offering elegant rooms and suites, fine dining, spa and wellness, and personal service. Where Luxury Feels Like Home.">
+  <meta name="theme-color" content="#F4F1E8">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder" class="site-header-wrap"></div>
+  <main id="main-content">
+    <section id="hero" class="hero" aria-roledescription="carousel" aria-label="Featured experiences at The Royal Stay">
+      <span class="sr-only" data-hero-live aria-live="off" aria-atomic="true"></span>
+      <div class="hero-slide is-active" data-slide role="group" aria-roledescription="slide" aria-label="Slide 1 of 3">
+        <img class="hero-img" src="assets/images/hotel-gallery-1.jpg" alt="Grand ornate hotel exterior in warm golden light" fetchpriority="high">
+        <div class="hero-overlay"></div>
+        <div class="container-x hero-content">
+          <h1 class="hero-title">Where Luxury Feels Like Home</h1>
+          <p class="hero-text">Discover refined comfort, exceptional hospitality, and memorable stays.</p>
+          <a class="btn btn-gold btn-gold-on-dark" href="rooms.html">Explore Our Rooms <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="hero-slide" data-slide role="group" aria-roledescription="slide" aria-label="Slide 2 of 3">
+        <img class="hero-img" src="assets/images/hero-banner-2.jpg" alt="Luxury tropical resort pool surrounded by palm trees">
+        <div class="hero-overlay"></div>
+        <div class="container-x hero-content">
+          <h2 class="hero-title">Your Private Escape Awaits</h2>
+          <p class="hero-text">Experience thoughtfully designed spaces where every detail matters.</p>
+          <a class="btn btn-gold btn-gold-on-dark" href="rooms.html?filter=suites">Discover Our Suites <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="hero-slide" data-slide role="group" aria-roledescription="slide" aria-label="Slide 3 of 3">
+        <img class="hero-img" src="assets/images/hero-banner-3.jpg" alt="Elegant hotel facade framed by landscaped gardens">
+        <div class="hero-overlay"></div>
+        <div class="container-x hero-content">
+          <h2 class="hero-title">Every Moment, Beautifully Experienced</h2>
+          <p class="hero-text">From exquisite dining to relaxing escapes, discover a stay worth remembering.</p>
+          <a class="btn btn-gold btn-gold-on-dark" href="dining.html">Explore Our Experiences <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <button type="button" class="hero-arrow hero-prev" data-hero-prev aria-label="Previous slide"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <button type="button" class="hero-arrow hero-next" data-hero-next aria-label="Next slide"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+      <div class="hero-controls">
+        <div class="flex items-center gap-3" role="group" aria-label="Choose a slide"><button type="button" class="hero-dot" data-dot aria-label="Go to slide 1"></button><button type="button" class="hero-dot" data-dot aria-label="Go to slide 2"></button><button type="button" class="hero-dot" data-dot aria-label="Go to slide 3"></button></div>
+        <button type="button" class="hero-pause" data-hero-pause aria-label="Pause slideshow"><i class="fa-solid fa-pause" aria-hidden="true"></i></button>
+      </div>
+    </section>
+
+    <section class="showcase-strip">
+      <div class="container-x showcase-strip-inner">
+        <span><i class="fa-solid fa-crown"></i> A stay worth remembering</span>
+        <a href="rooms.html">Explore Rooms <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="amenities.html">Discover Experiences <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="contact.html">Make an Enquiry <i class="fa-regular fa-envelope"></i></a>
+      </div>
+    </section>
+
+    <section id="rooms" class="section" aria-labelledby="rooms-title">
+      <div class="container-x">
+        <div class="section-head reveal center">
+          <h2 id="rooms-title" class="t-lg">Stay in Exceptional Comfort</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Three signature stays, each designed for rest. All prices are illustrative sample rates.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="card reveal flex flex-col" data-room-category="rooms">
+            <a class="img-wrap ar-43" href="room-details.html?room=deluxe" aria-label="View details for Deluxe Room">
+              <img src="assets/images/deluxe-room.jpg" alt="Deluxe Room with a king bed, warm neutral tones and soft lighting" loading="lazy">
+              <span class="price-tag">$240 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Deluxe Room</h3>
+              <p class="text-sm text-muted-royal mt-1">A calm, light-filled room with a plush king bed, a quiet work corner and a marble-finished bath.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 2 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>38 m²</li>
+                <li><i class="fa-solid fa-wifi" aria-hidden="true"></i>Free Wi-Fi</li><li><i class="fa-solid fa-snowflake" aria-hidden="true"></i>Air conditioning</li><li><i class="fa-solid fa-bath" aria-hidden="true"></i>Rain shower</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <a class="btn btn-outline btn-sm" href="room-details.html?room=deluxe">View Details</a>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=deluxe#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal flex flex-col" data-room-category="suites">
+            <a class="img-wrap ar-43" href="room-details.html?room=executive" aria-label="View details for Executive Suite">
+              <img src="assets/images/executive-suite.jpg" alt="Executive Suite living area with designer sofa and a bedroom beyond" loading="lazy">
+              <span class="price-tag">$380 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Executive Suite</h3>
+              <p class="text-sm text-muted-royal mt-1">A private lounge, a generous bedroom and a deep soaking tub for longer stays and working trips.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 3 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>62 m²</li>
+                <li><i class="fa-solid fa-couch" aria-hidden="true"></i>Separate lounge</li><li><i class="fa-solid fa-mug-hot" aria-hidden="true"></i>Coffee station</li><li><i class="fa-solid fa-bath" aria-hidden="true"></i>Soaking tub</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <a class="btn btn-outline btn-sm" href="room-details.html?room=executive">View Details</a>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=executive#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+          <article class="card reveal flex flex-col" data-room-category="suites">
+            <a class="img-wrap ar-43" href="room-details.html?room=royal" aria-label="View details for Royal Suite">
+              <img src="assets/images/royal-suite.jpg" alt="Royal Suite bedroom with a canopy-style bed, gold accents and city views" loading="lazy">
+              <span class="price-tag">$720 / night · sample price</span>
+            </a>
+            <div class="card-body flex flex-col flex-1">
+              <h3 class="t-md">Royal Suite</h3>
+              <p class="text-sm text-muted-royal mt-1">Our grandest address with panoramic views, a private dining area and a dedicated personal host.</p>
+              <ul class="meta-list">
+                <li><i class="fa-solid fa-user-group" aria-hidden="true"></i>Up to 4 guests</li>
+                <li><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>110 m²</li>
+                <li><i class="fa-solid fa-mountain-city" aria-hidden="true"></i>Panoramic views</li><li><i class="fa-solid fa-utensils" aria-hidden="true"></i>Private dining</li><li><i class="fa-solid fa-bell-concierge" aria-hidden="true"></i>Personal host</li>
+              </ul>
+              <div class="mt-auto pt-4 grid grid-cols-2 gap-2">
+                <a class="btn btn-outline btn-sm" href="room-details.html?room=royal">View Details</a>
+                <a class="btn btn-gold btn-sm" href="contact.html?room=royal#contact-form">Enquire Now</a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="text-center mt-6 reveal"><a class="btn btn-outline" href="rooms.html">View All Rooms &amp; Suites <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      </div>
+    </section>
+
+    <section class="section bg-white-soft" aria-labelledby="about-title">
+      <div class="container-x grid gap-8 lg:grid-cols-2 items-center">
+        <div class="img-wrap img-zoom ar-43 reveal">
+          <img src="assets/images/hotel-about.jpg" alt="The Royal Stay hotel façade and entrance in warm evening light" loading="lazy">
+        </div>
+        <div class="reveal">
+          <h2 id="about-title" class="t-lg">A Refined Approach to Hospitality</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead mt-3">The Royal Stay is a fictional hotel brand imagined around one idea: a luxury stay should feel as easy and welcoming as coming home. Every room, meal and moment is shaped by quiet attention to detail.</p>
+          <ul class="mt-4 grid gap-3">
+            <li class="feature flex gap-3 items-start"><span class="icon-chip flex-shrink-0"><i class="fa-solid fa-couch" aria-hidden="true"></i></span><span><strong>Comfort first.</strong> <span class="text-muted-royal">Fine linens, deep baths and rooms made for real rest.</span></span></li>
+            <li class="feature flex gap-3 items-start"><span class="icon-chip flex-shrink-0"><i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i></span><span><strong>Personalised service.</strong> <span class="text-muted-royal">Our team remembers preferences and anticipates needs.</span></span></li>
+            <li class="feature flex gap-3 items-start"><span class="icon-chip flex-shrink-0"><i class="fa-solid fa-gem" aria-hidden="true"></i></span><span><strong>Thoughtful design.</strong> <span class="text-muted-royal">Warm materials and gold accents, never excess.</span></span></li>
+          </ul>
+          <a class="btn btn-dark mt-5" href="about.html">Discover Our Story <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="amenities-title">
+      <div class="container-x">
+        <div class="section-head reveal center">
+          <h2 id="amenities-title" class="t-lg">Hotel Amenities</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Everything you need for a restful, productive or indulgent stay, under one roof.</p>
+        </div>
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <a class="card reveal block" href="amenities.html#pool">
+            <span class="img-wrap ar-169"><img src="assets/images/swimming-pool.jpg" alt="Illuminated outdoor swimming pool with loungers at dusk" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-person-swimming" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Swimming Pool</span><span class="text-sm text-muted-royal block mt-1">A heated outdoor pool with shaded loungers, poolside service and a calm adults-only hour each morning.</span></span>
+            </span>
+          </a>
+          <a class="card reveal block" href="amenities.html#spa">
+            <span class="img-wrap ar-169"><img src="assets/images/spa-wellness.jpg" alt="Spa treatment room with candles, towels and natural stone" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-spa" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Spa & Wellness</span><span class="text-sm text-muted-royal block mt-1">Massage, facial and body rituals in quiet treatment rooms, plus a sauna and steam room.</span></span>
+            </span>
+          </a>
+          <a class="card reveal block" href="amenities.html#fitness">
+            <span class="img-wrap ar-169"><img src="assets/images/hotel-gym.jpg" alt="Modern hotel fitness centre with cardio machines and free weights" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-dumbbell" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Fitness Centre</span><span class="text-sm text-muted-royal block mt-1">Cardio, strength equipment and studio space, open early and late for travelling schedules.</span></span>
+            </span>
+          </a>
+          <a class="card reveal block" href="amenities.html#dining">
+            <span class="img-wrap ar-169"><img src="assets/images/restaurant.jpg" alt="Elegant hotel restaurant with set tables and warm lighting" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-utensils" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Fine Dining</span><span class="text-sm text-muted-royal block mt-1">A seasonal restaurant for breakfast, lunch and dinner, with a lounge for evening drinks.</span></span>
+            </span>
+          </a>
+          <a class="card reveal block" href="amenities.html#conference">
+            <span class="img-wrap ar-169"><img src="assets/images/hotel-gallery-2.jpg" alt="Hotel conference room with a long table and presentation screen" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-people-group" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Conference Facilities</span><span class="text-sm text-muted-royal block mt-1">Flexible meeting rooms with presentation technology, refreshments and a dedicated events host.</span></span>
+            </span>
+          </a>
+          <a class="card reveal block" href="amenities.html#concierge">
+            <span class="img-wrap ar-169"><img src="assets/images/hotel-gallery-1.jpg" alt="Concierge desk in a grand hotel lobby" loading="lazy"></span>
+            <span class="card-body flex gap-3 items-start">
+              <span class="icon-chip flex-shrink-0"><i class="fa-solid fa-bell-concierge" aria-hidden="true"></i></span>
+              <span><span class="t-sm block">Concierge Services</span><span class="text-sm text-muted-royal block mt-1">Restaurant bookings, transfers, tours and thoughtful local tips arranged by our concierge team.</span></span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-charcoal on-dark" aria-labelledby="dining-title">
+      <div class="container-x grid gap-8 lg:grid-cols-2 items-center">
+        <div class="reveal order-2 lg:order-1">
+          <h2 id="dining-title" class="t-lg">An Exceptional Dining Experience</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="mt-3 text-muted-royal">From a leisurely breakfast to a candlelit dinner, our kitchen builds seasonal menus around fresh, carefully sourced ingredients and calm, attentive service.</p>
+          <ul class="check-list mt-4">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Seasonal tasting menu with optional wine pairing</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Generous breakfast served from early morning</span></li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Private dining for celebrations and small events</span></li>
+          </ul>
+          <a class="btn btn-gold btn-gold-on-dark mt-5" href="dining.html">Explore Dining <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="grid grid-cols-5 gap-3 order-1 lg:order-2 reveal">
+          <div class="img-wrap img-zoom ar-45 col-span-3"><img src="assets/images/restaurant.jpg" alt="Hotel restaurant dining room with elegant table settings" loading="lazy"></div>
+          <div class="img-wrap img-zoom col-span-2 self-end ar-43"><img src="assets/images/signature-dish.jpg" alt="Beautifully plated signature dish served at The Royal Stay" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-beige" aria-labelledby="testimonials-title">
+      <div class="container-x">
+        <div class="section-head reveal center">
+          <h2 id="testimonials-title" class="t-lg">Guest Impressions</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Sample testimonials from fictional guests, shown for demonstration. They are not verified reviews.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <figure class="card reveal card-body"><i class="fa-solid fa-quote-left quote-mark" aria-hidden="true"></i><blockquote class="mt-2 text-sm">The room felt calm the moment we walked in. Breakfast on the terrace was the highlight of the weekend.</blockquote><figcaption class="mt-3 font-semibold text-sm">Amelia R. <span class="text-muted-royal font-normal">· Sample guest</span></figcaption></figure>
+          <figure class="card reveal card-body"><i class="fa-solid fa-quote-left quote-mark" aria-hidden="true"></i><blockquote class="mt-2 text-sm">Quietly attentive staff and a suite with real space to work and unwind. Exactly what a business trip needs.</blockquote><figcaption class="mt-3 font-semibold text-sm">Daniel M. <span class="text-muted-royal font-normal">· Sample guest</span></figcaption></figure>
+          <figure class="card reveal card-body"><i class="fa-solid fa-quote-left quote-mark" aria-hidden="true"></i><blockquote class="mt-2 text-sm">We celebrated an anniversary here. The dinner, the spa and the small personal touches made it unforgettable.</blockquote><figcaption class="mt-3 font-semibold text-sm">Priya &amp; Arjun <span class="text-muted-royal font-normal">· Sample guests</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="offers-title">
+      <div class="container-x">
+        <div class="section-head reveal center">
+          <h2 id="offers-title" class="t-lg">Special Offers</h2>
+          <span class="rule" aria-hidden="true"></span>
+          <p class="lead">Sample packages with illustrative pricing, shown to demonstrate how offers could appear.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <article class="card reveal card-body flex flex-col"><span class="badge self-start">Sample offer</span><h3 class="t-md mt-3">Weekend Escape</h3><p class="text-sm text-muted-royal mt-1">Two nights in a Deluxe Room with breakfast each morning and late check-out.</p><p class="mt-3 font-semibold">From $480 <small class="text-muted-royal font-normal">(illustrative)</small></p><a class="btn btn-outline btn-sm mt-4 self-start" href="contact.html">Enquire</a></article>
+          <article class="card reveal card-body flex flex-col"><span class="badge self-start">Sample offer</span><h3 class="t-md mt-3">Romantic Retreat</h3><p class="text-sm text-muted-royal mt-1">An Executive Suite, a candlelit dinner for two and a couples spa session.</p><p class="mt-3 font-semibold">From $890 <small class="text-muted-royal font-normal">(illustrative)</small></p><a class="btn btn-outline btn-sm mt-4 self-start" href="contact.html">Enquire</a></article>
+          <article class="card reveal card-body flex flex-col"><span class="badge self-start">Sample offer</span><h3 class="t-md mt-3">Luxury Stay Package</h3><p class="text-sm text-muted-royal mt-1">Three nights in the Royal Suite with dining credit, spa access and airport transfers.</p><p class="mt-3 font-semibold">From $2,300 <small class="text-muted-royal font-normal">(illustrative)</small></p><a class="btn btn-outline btn-sm mt-4 self-start" href="contact.html">Enquire</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gold section-tight" aria-labelledby="cta-title">
+      <div class="container-x flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left reveal">
+        <div>
+          <h2 id="cta-title" class="t-lg">Your Next Memorable Stay Begins Here</h2>
+          <p class="mt-1">Choose your dates, pick a room and send an enquiry in minutes.</p>
+        </div>
+        <a class="btn btn-dark" href="contact.html">Plan Your Stay <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/home.js" defer></script>
+</body>
+</html>

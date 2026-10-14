@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | The Royal Stay</title>
+  <meta name="description" content="Browse the photo gallery of The Royal Stay: rooms, dining, amenities and hotel exterior.">
+  <meta name="theme-color" content="#F4F1E8">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <div id="header-placeholder" class="site-header-wrap"></div>
+  <main id="main-content">
+    <section class="page-hero">
+      <img class="page-hero-img" src="assets/images/hotel-gallery-4.jpg" alt="Hotel rooftop terrace and gardens at The Royal Stay">
+      <div class="page-hero-overlay"></div>
+      <div class="container-x page-hero-content">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Gallery</span></nav>
+        <h1 class="t-xl">Gallery</h1>
+        <p class="lead">A look inside The Royal Stay. Filter by category and open any photo to enlarge.</p>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="gal-title">
+      <div class="container-x">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-5 reveal">
+          <h2 id="gal-title" class="t-lg">Moments at The Royal Stay</h2>
+          <div class="flex flex-wrap gap-2" role="group" aria-label="Filter gallery by category">
+            <button type="button" class="filter-btn" data-gallery-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-gallery-filter="rooms" aria-pressed="false">Rooms</button>
+            <button type="button" class="filter-btn" data-gallery-filter="dining" aria-pressed="false">Dining</button>
+            <button type="button" class="filter-btn" data-gallery-filter="amenities" aria-pressed="false">Amenities</button>
+            <button type="button" class="filter-btn" data-gallery-filter="exterior" aria-pressed="false">Exterior</button>
+          </div>
+        </div>
+        <div id="gallery-grid" class="gallery-grid">
+          <button type="button" class="gallery-item g-wide" data-category="exterior" data-caption="Grand hotel exterior"><img src="assets/images/hero-banner-1.jpg" alt="Grand hotel exterior at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="rooms" data-caption="Deluxe Room with king bed"><img src="assets/images/deluxe-room.jpg" alt="Deluxe Room with king bed at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item g-tall" data-category="amenities" data-caption="Illuminated outdoor swimming pool"><img src="assets/images/swimming-pool.jpg" alt="Illuminated outdoor swimming pool at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="dining" data-caption="Elegant hotel restaurant"><img src="assets/images/restaurant.jpg" alt="Elegant hotel restaurant at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item g-wide" data-category="rooms" data-caption="Royal Suite bedroom"><img src="assets/images/royal-suite.jpg" alt="Royal Suite bedroom at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="amenities" data-caption="Spa treatment room"><img src="assets/images/spa-wellness.jpg" alt="Spa treatment room at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item g-tall" data-category="exterior" data-caption="Grand hotel lobby and entrance"><img src="assets/images/hotel-gallery-1.jpg" alt="Grand hotel lobby and entrance at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="dining" data-caption="Plated signature dish"><img src="assets/images/signature-dish.jpg" alt="Plated signature dish at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="amenities" data-caption="Modern fitness centre"><img src="assets/images/hotel-gym.jpg" alt="Modern fitness centre at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item g-tall" data-category="rooms" data-caption="Executive Suite living area"><img src="assets/images/executive-suite.jpg" alt="Executive Suite living area at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="amenities" data-caption="Conference and meeting room"><img src="assets/images/hotel-gallery-2.jpg" alt="Conference and meeting room at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="dining" data-caption="Hotel lounge and bar"><img src="assets/images/hotel-gallery-3.jpg" alt="Hotel lounge and bar at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item g-wide" data-category="exterior" data-caption="Elegant outdoor hotel terrace"><img src="assets/images/hotel-gallery-4.jpg" alt="Elegant outdoor hotel terrace at The Royal Stay" loading="lazy"></button>
+          <button type="button" class="gallery-item " data-category="exterior" data-caption="Hotel façade in evening light"><img src="assets/images/hotel-about.jpg" alt="Hotel façade in evening light at The Royal Stay" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+      <button type="button" id="lightbox-close" class="lightbox-btn lightbox-close" aria-label="Close photo viewer"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <button type="button" id="lightbox-prev" class="lightbox-btn lightbox-prev" aria-label="Previous photo"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+      <figure class="lightbox-figure"><img id="lightbox-img" class="lightbox-img" src="" alt=""><figcaption id="lightbox-caption" class="lightbox-caption"></figcaption></figure>
+      <button type="button" id="lightbox-next" class="lightbox-btn lightbox-next" aria-label="Next photo"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+    <section class="bg-gold section-tight" aria-labelledby="cta-title">
+      <div class="container-x flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left reveal">
+        <div>
+          <h2 id="cta-title" class="t-lg">Like What You See?</h2>
+          <p class="mt-1">Come and experience it for yourself.</p>
+        </div>
+        <a class="btn btn-dark" href="contact.html">Make an Enquiry <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/components.js" defer></script>
+  <script src="js/gallery.js" defer></script>
+</body>
+</html>

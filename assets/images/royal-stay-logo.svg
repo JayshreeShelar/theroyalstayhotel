@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 336 96" width="336" height="96" role="img" aria-labelledby="rsLogoTitle rsLogoDesc">
+  <title id="rsLogoTitle">The Royal Stay</title>
+  <desc id="rsLogoDesc">Crowned RS monogram inside a double gold ring, beside the wordmark The Royal Stay and the tagline Where Luxury Feels Like Home.</desc>
+  <g fill="none" stroke="#C9A55C">
+    <circle cx="46" cy="58" r="35" stroke-width="2"/>
+    <circle cx="46" cy="58" r="30.5" stroke-width="0.8" opacity="0.75"/>
+  </g>
+  <g fill="#C9A55C">
+    <path d="M29 21 L31.5 8 L38.5 15 L46 3 L53.5 15 L60.5 8 L63 21 Z"/>
+    <rect x="29" y="22.5" width="34" height="3.5" rx="1"/>
+    <circle cx="31.5" cy="6.5" r="2"/>
+    <circle cx="46" cy="1.8" r="2"/>
+    <circle cx="60.5" cy="6.5" r="2"/>
+  </g>
+  <g font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif" font-weight="700" font-size="40" fill="#C9A55C">
+    <text x="44" y="71" text-anchor="end">R</text>
+    <text x="48" y="71" text-anchor="start">S</text>
+  </g>
+  <path d="M36 77 H56" stroke="#C9A55C" stroke-width="1"/>
+  <g font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif">
+    <text x="106" y="33" font-size="12" font-weight="600" fill="#7D5E16" textLength="26" lengthAdjust="spacing">THE</text>
+    <text x="106" y="64" font-size="30" font-weight="700" fill="#0B2B24" textLength="222" lengthAdjust="spacing">ROYAL STAY</text>
+  </g>
+  <path d="M106 73 H328" stroke="#C9A55C" stroke-width="1"/>
+  <text x="106" y="88" font-family="Manrope, 'Segoe UI', Arial, sans-serif" font-size="8" font-weight="600" fill="#4A5B54" textLength="222" lengthAdjust="spacing">WHERE LUXURY FEELS LIKE HOME</text>
+</svg>
