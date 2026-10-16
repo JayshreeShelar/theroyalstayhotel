@@ -529,3 +529,18 @@ main .grid.gap-8 { gap: 1.5rem; }
 
 /* Room preview overlay and dual enquiry actions */
 .room-preview-modal{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;padding:22px}.room-preview-modal.is-open{display:flex}.room-preview-backdrop{position:absolute;inset:0;background:rgba(15,20,18,.76);backdrop-filter:blur(5px)}.room-preview-panel{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr 1fr;width:min(900px,96vw);max-height:88vh;overflow:auto;background:var(--ivory,#F4F1E8);border-radius:22px;box-shadow:0 24px 80px #0005;animation:previewIn .22s ease-out}.room-preview-panel>img{width:100%;height:100%;min-height:330px;max-height:570px;object-fit:cover}.room-preview-copy{padding:clamp(22px,4vw,42px);align-self:center}.room-preview-copy p:not(.eyebrow){line-height:1.75;margin-top:12px}.room-preview-close{position:absolute;right:12px;top:12px;z-index:2;border:0;border-radius:50%;width:38px;height:38px;background:#fff;color:#222;font-size:27px;cursor:pointer;box-shadow:0 3px 14px #0002}.room-view-trigger{cursor:pointer}.contact-send-actions{display:flex;gap:10px;flex-wrap:wrap;grid-column:1/-1}.contact-send-actions .btn{flex:1;justify-content:center}.btn-whatsapp{background:#168b51;color:#fff;border:1px solid #168b51}.btn-whatsapp:hover{background:#106b3d;color:#fff;border-color:#106b3d}@keyframes previewIn{from{opacity:0;transform:translateY(10px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}@media(max-width:640px){.room-preview-panel{grid-template-columns:1fr}.room-preview-panel>img{height:220px;min-height:220px}.room-preview-modal{padding:12px}.contact-send-actions{flex-direction:column}}
+
+/* ---- Mobile menu: glassmorphism (phones & tablets only) ---- */
+@media (max-width: 1023px) {
+  .mobile-menu {
+    position: absolute; left: 0; right: 0; top: 100%;
+    background: rgba(244, 241, 232, .45);
+    -webkit-backdrop-filter: blur(18px) saturate(1.5);
+    backdrop-filter: blur(18px) saturate(1.5);
+    border-top: 1px solid rgba(255, 255, 255, .55);
+    border-bottom: 1px solid rgba(var(--rgb-gold), .35);
+    box-shadow: 0 18px 40px -18px rgba(var(--rgb-ink), .45);
+  }
+  /* a parent with its own backdrop-filter stops the menu from blurring the page, so pause it while the menu is open */
+  .site-header-wrap:has(.mobile-menu.is-open) { -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
